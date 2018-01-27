@@ -64,6 +64,15 @@ app.get('/about', (req, res) => {
 
 });
 
+app.get('/tinsinsin', (req, res) => {
+
+    res.render('tinsinsin.hbs', {
+        pageTitle: 'TINSINSIN & BinJ',
+        welcomeMessage: 'Hello cutable Sing-Ting A_A'
+    });
+});
+
+
 app.get('/bad', (req, res) => {
     res.send({
         status: '404',
